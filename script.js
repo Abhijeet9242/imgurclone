@@ -43,7 +43,7 @@ function showImages(data) {
     let img = document.createElement("img");
     let div2 = document.createElement("div");
 
-    maindiv.addEventListener("dblclick", dlimg);
+    maindiv.addEventListener("click", dlimg);
 
     let p = document.createElement("p");
 
