@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+  height: 380px;
+  margin-top: 0;
+}
+
+.navbackground {
+  background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+}
+body {
+  background-color: rgb(46, 48, 53);
+}
+
+/*img gallery css*/
+#main_cont {
+  display: flex;
+  width: 80%;
+  /* border:2px solid blue; */
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+#main_cont > div {
+  width: 24%;
+  /* border:1px solid red; */
+  box-sizing: border-box;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.maindiv > div {
+  /* border:0.2px solid rgb(191, 191, 194); */
+
+  /* width:100%; */
+  /* background-color: whitesmoke; */
+  background-color: rgb(191, 191, 194);
+}
+.imgsize {
+  width: 100%;
+}
+
+.div2 {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+
+  padding: 10px 0px;
+}
+.div2 img {
+  width: 12px;
+}
+.div2 span {
+  color: black;
+  padding-left: 3px;
+}
+.ptitle {
+  color: white;
+  padding-left: 13px;
+}
+
+/*navbar*/
+#header {
+  position: sticky;
+  top: 0;
+  /* z-index: -1; */
+}
+#nav {
+  display: flex;
+  height: 70px;
+}
+.left {
+  width: 25%;
+  /* border:1px solid red; */
+  display: flex;
+  /* padding:5px */
+  align-items: center;
+}
+.left > div {
+  width: 50%;
+  /* border:1px solid yellow; */
+  box-sizing: border-box;
+}
+.imagelogo > img {
+  width: 80%;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.btn {
+  width: 80%;
+  background-color: #1bb76e;
+  padding: 10px;
+  /* margin-top: 3%; */
+  border-radius: 3px;
+}
+.btn span {
+  color: white;
+}
+.item {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding-left: 12px;
+  cursor: pointer;
+}
+
+.center {
+  width: 53%;
+  /* border:1px solid red; */
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.inputbox {
+  display: flex;
+  /* border:1px solid yellow; */
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  padding-top: 4px;
+  margin-left: 80px;
+}
+
+input[type="text"] {
+  /* background-color : transparent;  */
+  border-radius: 3px;
+  background-color: #ffffff40;
+  border: none;
+  color: white;
+}
+.search-icon {
+  position: absolute;
+  top: 40%;
+  right: 33%;
+  color: white;
+}
+.in {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  align-items: center;
+}
+
+.btn-div {
+  width: 18%;
+  /* border:1px solid green; */
+}
+.btn1 {
+  background-color: blue;
+  padding: 8px;
+  color: white;
+  font-size: 16px;
+  /* border-radius: 5px; */
+  /* margin-top:12%; */
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.right {
+  width: 22%;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.right a {
+  text-decoration: none;
+  color: #fff;
+}
+.sign-in {
+  width: 30%;
+  /* border: 1px solid green; */
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  border-radius: 4px;
+}
+.sign-up {
+  width: 30%;
+  /* border: 1px solid green; */
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  background-color: #1bb76e;
+  border-radius: 4px;
+  color: white;
+}
+#input_search {
+  cursor: pointer;
+}
+
+.para {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.para p {
+  font-size: 25px;
+  color: black;
+}
+
+.btnsdiv {
+  width: 15%;
+  /* border:1px solid yellow; */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.btnsdiv > button {
+  padding: 10px;
+  width: 50%;
+  font-size: 17px;
+  color: white;
+  background-color: teal;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+/* header random 5 images flex */
+.headerimgflex {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  margin-top: 75px;
+  /* align-items: center; */
+}
+.headerimgflex > div {
+  width: 15%;
+
+  /* background-color: aqua; */
+}
+.headerimgflex > div img {
+  width: 100%;
+  height: 180px;
+}

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+    <!-- <style>
+        *{
+            margin:0;
+            padding:0;
+           
+        }
+        .background{
+     background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+        height: 380px;
+        margin-top: 0;
+        }
+
+        .navbackground{
+            background: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+        }
+        body{
+            background-color: rgb(46, 48, 53);
+   
+        }
+     
+     /*img gallery css*/
+#main_cont{
+    display: flex;
+    width:80%;
+    /* border:2px solid blue; */
+    column-gap: 10px;
+    row-gap: 10px;
+    margin:auto;
+    flex-wrap: wrap;
+    margin-bottom: 50px;;
+  
+}
+#main_cont > div{
+    width:24%;
+    /* border:1px solid red; */
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+
+.maindiv > div {
+    /* border:0.2px solid rgb(191, 191, 194); */
+    
+    /* width:100%; */
+    /* background-color: whitesmoke; */
+    background-color:rgb(191, 191, 194);
+    
+}
+.imgsize{
+    width:100%;
+    
+}
+
+.div2{
+    display: flex;
+    width:90%;
+    justify-content: space-around;
+    
+    padding: 10px 0px
+  
+    
+}
+.div2  img{
+    width:12px;
+}
+.div2 span{
+    color:black;
+    padding-left: 3px;;
+}
+.ptitle{
+    color:white;
+   padding-left: 13px;
+}
+
+/*navbar*/
+#header{
+    position: sticky;
+    top:0;
+    /* z-index: -1; */
+   
+}
+#nav{
+    display: flex;
+    height:70px;
+    
+    
+    }
+.left{
+    width:25%;
+    /* border:1px solid red; */
+    display: flex;
+    /* padding:5px */
+    align-items: center;
+
+}
+.left > div{
+    width: 50%;;
+    /* border:1px solid yellow; */
+    box-sizing: border-box;
+}
+ .imagelogo > img{
+    width: 80%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.btn{
+    width:80%;
+    background-color:#1bb76e;
+    padding:10px;
+    /* margin-top: 3%; */
+    border-radius: 3px;;
+    
+   }
+   .btn span{
+       color:white;
+   }
+.item{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left:12px;
+    cursor: pointer;
+   
+}
+
+
+.center{
+    width:53%;
+    /* border:1px solid red; */
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.inputbox{
+  
+    display: flex;
+    /* border:1px solid yellow; */
+    width:70%;
+    margin: auto;
+    align-items: center;
+    padding-top: 4px;
+    margin-left:80px;
+    
+   
+    
+    
+}
+
+input[type="text"] {
+
+/* background-color : transparent;  */
+border-radius: 3px;;
+background-color : #FFFFFF40;
+border: none;
+color:white;
+
+}
+.search-icon{
+    position: absolute;
+    top:40%;
+    right: 33%;
+    color:white;
+
+}
+.in{
+   
+    width:100%;
+    padding:10px;
+    outline: none;
+    font-size: 16px;;
+    align-items: center;
+}
+
+.btn-div{
+    width:18%;
+    /* border:1px solid green; */
+    
+ 
+  
+}
+.btn1{
+    background-color: blue;
+    padding:8px;
+    color: white;
+    font-size: 16px;
+    /* border-radius: 5px; */
+    /* margin-top:12%; */
+    border-radius: 3px;;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+
+::placeholder {
+    color: grey;
+}
+
+.right{
+    width:22%;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;;
+    align-items: center;
+}
+.right a{
+    text-decoration:none;
+    color:#fff;
+}
+.sign-in{
+    width:30%;
+    /* border: 1px solid green; */
+    padding:10px;
+    font-size: 20px;
+    text-align: center;
+color:white;
+    border-radius: 4px;
+}
+.sign-up{
+    width:30%;
+    /* border: 1px solid green; */
+    padding:10px;
+    font-size: 20px;
+    text-align: center;
+    background-color:#1bb76e;
+    border-radius: 4px;
+    color: white;
+}
+#input_search{
+    cursor:pointer;
+}
+
+.para{
+    width:100%;
+    margin: auto;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.para p {
+    font-size: 25px;
+    color: black;
+}
+
+.btnsdiv{
+    width:15%;
+    /* border:1px solid yellow; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin-bottom: 30px;
+}
+.btnsdiv > button{
+    padding:10px;
+    width:50%;
+    font-size: 17px;;
+    color:white;
+    background-color: teal;
+    border-radius: 3px;;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* header random 5 images flex */
+.headerimgflex{
+    width:88%;
+    margin:auto;
+    display: flex;
+    gap:10px;
+    margin-top: 75px;
+    /* align-items: center; */
+}
+.headerimgflex > div{
+    width:15%;
+  
+    /* background-color: aqua; */
+}
+.headerimgflex > div img{
+    width:100%;
+    height:180px;
+}
+
+
+
+
+    </style> -->
+</head>
+<body>
+    <div id="header" class="navbackground">
+    <nav id="nav">
+        <div class="left">
+            <div class="imagelogo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR65dYgTPK6Rxx1oKaw1u2dMeTqE2NBQJpd6VU-aroAVOWC5ROmXSEC8FyuNbRueVbo03M&usqp=CAU" alt="imgur">
+            </div>
+            <div>
+                <div class="btn">
+                    <div class="item">
+                        <span>
+                        <img src="https://s.imgur.com/desktop-assets/desktop-assets/icon-new-post.13ab64f9f36ad8f25ae3544b350e2ae1.svg" alt="">
+                        </span>
+                       <span>
+                           New Post
+                       </span>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="inputbox">
+                <input type="text" placeholder="Images,#tags,@users oh my!" class="in" id="ip_content" value="">
+                <span class="material-icons search-icon" id="input_search">
+                    search
+                </span>
+            </div>
+            <div class="btn-div">
+            <button class="btn1" >Go Ad-Free</button>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="sign-in ">
+                <a href="">
+                    Sign In
+                </a>
+            </div>
+            <div class="sign-up ">
+                <a href="#">
+                    Sign Up
+                </a>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+
+
+
+
+
+<!-- header imageflex -->
+<div class="background">
+    <div>.</div>
+    <div class="headerimgflex">
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+        <div><img src="https://m.media-amazon.com/images/I/61iFiYWVT7L._AC_SL1436_.jpg" alt=""></div>
+       
+    </div>
+</div>
+
+
+    <div class="para">
+        <p>MOST VIRAL</p>
+        <p>NEWEST</p>
+    </div>
+
+    <div id="main_cont"></div>
+    
+
+    <div class="btnsdiv">
+    <button id="prevbtn">Prev</button>
+    <button id="nextbtn">Next</button>
+    </div>
+
+    
+
+    <!-- <script>
+        randomImages()
+       
+         var main_cont = document.getElementById("main_cont")
+
+        var random
+       
+        async function randomImages(){
+           
+          
+            try{
+            let main_cont = document.getElementById("main_cont")
+            main_cont.innerHTML = " "
+
+
+            
+
+            // var random ;
+            console.log(random)
+                // console.log(page)
+            // let res = await fetch(`https://api.unsplash.com/photos/?per_page=12&page=${page}&client_id=MYWR1FgokO69ROjKxCU5ng5WDZNvO2Td4PefxNVNsBw`)
+            let res = await fetch(`https://api.unsplash.com/search/photos/?query=${random}&per_page=12&page=${page}&client_id=MYWR1FgokO69ROjKxCU5ng5WDZNvO2Td4PefxNVNsBw`)
+            let data = await res.json()
+            data = data.results
+         console.log(data)
+        showImages(data)
+            }
+            catch(err){
+                console.log(err)
+            }
+        }
+        
+
+        // randomImages()
+
+        function showImages(data){
+            if(data.length ==0){
+                // let h1 = document.createElement("h1")
+                // h1.innerText = "wgfwfguwfgu"
+                // main_cont.append(h1)
+                alert("NO RESULT FOUND")
+            }
+            
+            data.forEach(item => {
+                // console.log(item)
+                let maindiv = document.createElement("div")
+                let imgdiv = document.createElement("div")
+                let likediv = document.createElement("div")
+                let img = document.createElement("img")
+                let div2 = document.createElement("div")
+
+                maindiv.addEventListener("dblclick",dlimg)
+
+                let p = document.createElement("p")
+
+               maindiv.setAttribute("class","maindiv")
+                img.setAttribute("class","imgsize")
+                div2.setAttribute("class","div2")
+                p.setAttribute("class","ptitle")
+
+                img.src = item.urls.small
+                p.innerHTML = item.alt_description
+
+                    div2.innerHTML = 
+                    `<p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUbhqo251aMtx1WmBEBbWuc_P8Gmiinfh4A&usqp=CAU" alt=""/><span>${item.likes}</span></p>
+                 <p><img  src="https://www.freeiconspng.com/thumbs/comment-png/comment-png-1.png" alt=""/><span>${item.likes}</span></p>
+                    <p><img  src="https://cdn3.iconfinder.com/data/icons/mixed-all-icons/512/LOOK-512.png" alt=""/><span>${item.likes} K</span></p>`
+
+
+
+                        function dlimg(){
+                            window.open(item.links.download,'_blank')
+                        }
+
+                imgdiv.append(img)
+                likediv.append(p,div2)
+                maindiv.append(imgdiv,likediv)
+
+                main_cont.append(maindiv)
+               
+            });
+        }
+
+
+
+
+       
+            // searching on query--------------------------------------------------------------
+            let ipitem = document.getElementById("input_search")
+                ipitem.addEventListener("click",getip)
+        
+                function getip()
+                {
+                let ans = document.getElementById("ip_content").value
+                console.log(ans.length)
+                    if(ans.length == undefined ){
+                         random = "random"
+                        //  console.log(random)
+                        randomImages()
+                        
+                    }
+                    
+                    else{
+                        random = ans
+                        randomImages()
+                       }
+                  
+                 }
+
+
+         // pagination----------------------------------------------------------
+         var page = 1
+    let prevbtn = document.getElementById("prevbtn")
+    let nextbtn = document.getElementById("nextbtn")
+    prevbtn.addEventListener("click",prevfun)
+    nextbtn.addEventListener("click",nextfun)
+
+function prevfun(){
+    page -= 1
+    // console.log("hii")
+    console.log(page)
+    if(page === 0){
+        let prevbtn = document.getElementById("prevbtn")
+        prevbtn.disabled = true
+    }
+    randomImages()
+}
+function nextfun(){
+    page += 1
+   
+    // console.log(page)
+    randomImages()
+}
+    </script> -->
+    <script src="./script.js"></script>
+</body>
+</html>
